@@ -46,6 +46,7 @@ document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équa
 function fonctionYoKwandikaEx4(){
 var text = document.getElementById("paragraphe").innerHTML = 'regardez dans votre console';
 var text = 'Hello hogi';
+
 var i=0;
 while(i<50){
     console.log(text);
