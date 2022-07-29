@@ -31,6 +31,12 @@ function fonctionYoKwandikaEx2(){
 document.getElementById("exerciceYakabiri").innerHTML = "Hello World!";
 }
 function fonctionYoKwandikaEx3(){
+var na = prompt("A= ");
+var nb = prompt("B= ");
+var nc = prompt("C= ");
+
+var delta = (nb*nb)-4(na*nc);
+var Solution1= delta
 document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équation Ax²+Bx+C=0";
 }
 
