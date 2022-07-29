@@ -23,7 +23,7 @@
         <p class="description">Résoudre une équation du second degré</p>
         <div id="exerciceYagatatu"></div>
         <button onclick="fonctionYoKwandikaEx4()">exercice 4</button>
-        <p class="description">écrire "Hello Hogi" 50 fois</p>
+        <p id="paragraphe" class="description">écrire "Hello Hogi" 50 fois</p>
         <div id="exerciceYakane"></div>
         <!-- <button onclick="fonctionYoKwandika()">exercice 5</button>
         <div id="exerciceYaGatanu"></div>
@@ -68,18 +68,9 @@
       }
       
       function fonctionYoKwandikaEx4(){
-        while
-        document.getElementById("exerciceYakane").innerHTML = "Twagiye";
-        
-        var newPara = document.createElement('p');
-newPara.id = 'nouveau';
-var text = document.createTextNode('Hello Hogi');
-
-newPara.appendChild(text);
-document.body.appendChild(newPara);
-
+        var text = document.getElementById("paragraphe").innerHTML += '\n Hogi';
       }
-
+    
     </script>
 </body>
 </html>
