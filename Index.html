@@ -13,7 +13,7 @@
            Déterminer le maximum entre trois caractères
 
         <div class="conteneur">
-        <button onclick="fonctionYoKwandika()">exercice 1</button>
+        <button onclick="fonctionYoKwandikaEx1()">exercice 1</button>
         <p class="description">Determiner le maximum de entre les trois variables que tu vas taper</p>
         <div id="exerciceYambere"></div>
         <button onclick="fonctionYoKwandika()">exercice 2</button>
@@ -28,31 +28,39 @@
              
     </P>
     <script>
-        function fonctionYoKwandika(){
+        function fonctionYoKwandikaEx1(){
             let a = prompt("veuillez entrer un nombre: A= ");
+            while (a == null){
+                a = prompt("Où est-ce que vous allez comme ça. Entrez un nombre s'il vous plaît A= ");
+            };
             let b = prompt("veuillez entrer un deuxième: B= ");
-            if (a == b){
-                alert("Veuillez actualiser la page et entrer un nombre différent")
+            while (b == null || a == b){
+                b = prompt("Veuillez entrer un nombre différent de A: B= ");
             }
-            if (a == b){
-                alert("Veuillez actualiser la page et entrer un nombre différent")
+
             let c = prompt("veuillez entrer un troisième: C= ");
-            alert("A= "+ a + "\n B= " + b +  "\n C= "+ c);
+            while (c == null || c == b || c == a){
+                alert("Veuillez entrer un nombre différent");
+                c = prompt("Veuillez entrer un nombre différent de A et B: C= ");
+            }
+
+            alert("A= "+ a + "\n B= " + b +  "\n C= "+ c + "\n Fyonda ok");
 
         if (a > b && a > c) {
-            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + a ;}
+            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + a + "= A" ;}
         else if (b > a && b > c) {
-            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + b ;
+            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + b + "= B" ;
             }
         else if (c > a && c > b){
-            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + b ;
+            document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + c + "= C" ;
             }
+            document.getElementById("exerciceYambere").innerHTML += "\n" + "c'est fini pour le premier point!!!";
         }
 
-            document.getElementById("exerciceYambere").innerHTML = "Le maximum est ";
+            
         
         
-    }  
+
     </script>
 </body>
 </html>
