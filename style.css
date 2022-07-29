@@ -22,6 +22,7 @@ button{
 }
 button:hover{
     scale: 120%;
+    transition-delay: 200ms;
 }
 .description{
     font-size: 8px;

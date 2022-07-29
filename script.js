@@ -35,11 +35,19 @@ var na = prompt("A= ");
 var nb = prompt("B= ");
 var nc = prompt("C= ");
 
-var delta = nb**2-4*(na*nc);
+
+var delta = (nb**2)-(4*na*nc);
+
+if (delta<0){
+alert('la solution est un nombre complex');
+}
+if (delta=0){
+    alert("la solution est " + Solution1)
+}
 var d = delta**(0.5);
-var Solution1 = (nb+d)/2;
-var Solution2 = (nb-d)/2;
-alert("la première solution est "+Solution1+" et la seconde solution est "+Solution2);
+var Solution1 = (-nb+d)/(2*na);
+var Solution2 = (-nb-d)/(2*na);
+alert("la première solution est " + Solution1 +" et la seconde solution est " + Solution2);
 document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équation "+na+"x²+"+B+"x+"+C+"=0";
 }
 
