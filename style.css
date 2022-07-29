@@ -21,7 +21,7 @@ button{
     margin-bottom: 10px;
 }
 button:hover{
-    scale: 110;
+    scale: 120%;
 }
 .description{
     font-size: 8px;
