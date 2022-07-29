@@ -28,18 +28,21 @@ else if (c > a && c > b){
 }
 
 function fonctionYoKwandikaEx2(){
-document.getElementById("exerciceYakabiri").innerHTML = "Hello World!";
+document.getElementById("exerciceYakabiri").innerHTML = "L'explication pratique que j'ai pu remarqué est que lorsque on fait l'operation valeur1 && valeur2, l'ordinateur renvoie toujours la deuxième valeur lorsque les valeurs sont vrais. Une seule exception rancontré avec le 0 puisque '0 = false' par défaut. ";
 }
 function fonctionYoKwandikaEx3(){
 var na = prompt("A= ");
 var nb = prompt("B= ");
 var nc = prompt("C= ");
 
-var delta = (nb*nb)-4(na*nc);
-var Solution1= delta
-document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équation Ax²+Bx+C=0";
+var delta = nb**2-4*(na*nc);
+var d = delta**(0.5);
+var Solution1 = (nb+d)/2;
+var Solution2 = (nb-d)/2;
+alert("la première solution est "+Solution1+" et la seconde solution est "+Solution2);
+document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équation "+na+"x²+"+B+"x+"+C+"=0";
 }
 
 function fonctionYoKwandikaEx4(){
-var text = document.getElementById("paragraphe").innerHTML += '\n Hogi';
+var text = document.getElementById("paragraphe").innerHTML = 'regardez dans votre console';
 }
