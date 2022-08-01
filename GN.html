@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<style>
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#hbd{
+    font-family:;
+}
+.conteneur{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 50ch;
+    background-color: rgb(50, 174, 205);
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 100px;
+    font-size: large;
+    font-weight: bolder;
+    width: 100px;
+
+}
+button:hover{
+    scale: 120%;
+    transition-delay: 200ms;
+}
+.description{
+    font-size: 8px;
+}
+.conteneur div{
+    margin-bottom: 10px;
+}
+</style>
+    <title>Bonne nuit</title>
+</head>
+<body>
+    <h1 id="hbd"></h1>
+    <P>
+        <i class=""></i>
+
+        <div class="conteneur">
+        <button onclick="fonctionYoKwandikaEx1()">CLICK HERE</button>
+        <!-- <p class="description">Determiner le maximum de entre les trois variables que tu vas taper</p>
+        <div id="exerciceYambere"></div>
+        <button onclick="fonctionYoKwandikaEx2()">exercice 2</button>
+        <p class="description">Infinity: explication en Javascript</p>
+        <div id="exerciceYakabiri"></div>
+        <button onclick="fonctionYoKwandikaEx3()">exercice 3</button>
+        <p class="description">Résoudre une équation du second degré </br> Ax²+Bx+C=0</p>
+        <div id="exerciceYagatatu"></div>
+        <button onclick="fonctionYoKwandikaEx4()">exercice 4</button>
+        <p id="paragraphe" class="description">écrire "Hello Hogi" 50 fois</p>
+        <div id="exerciceYakane"></div> -->
+        <!-- <button onclick="fonctionYoKwandika()">exercice 5</button>
+        <div id="exerciceYaGatanu"></div>
+        </div>
+              -->
+    </P>
+    <footer></footer>
+    <script>
+function fonctionYoKwandikaEx1(){
+let name = prompt('Votre nom: ');
+    document.getElementById('hbd').innerHTML = 'BONNE NUIT A TOI  </br>'+ name.toUpperCase();
+    }
+   
+    // while (a == null){
+    //     a = prompt("Où est-ce que vous allez comme ça. Entrez un nombre s'il vous plaît A= ");
+    // };
+    // let b = prompt("veuillez entrer un deuxième: B= ");
+    // while (b == null || a == b){
+    //     b = prompt("Veuillez entrer un nombre différent de A: B= ");
+    
+
+//     let c = prompt("veuillez entrer un troisième: C= ");
+//     while (c == null || c == b || c == a){
+//         alert("Veuillez entrer un nombre différent");
+//         c = prompt("Veuillez entrer un nombre différent de A et B: C= ");
+//     }
+
+//     alert("A= "+ a + "\n B= " + b +  "\n C= "+ c + "\n Fyonda ok");
+
+// if (a > b && a > c) {
+//     document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + a + "= A" ;}
+// else if (b > a && b > c) {
+//     document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + b + "= B" ;
+//     }
+// else if (c > a && c > b){
+//     document.getElementById("exerciceYambere").innerHTML = "Le maximum est égal à " + c + "= C" ;
+//     }
+//     document.getElementById("exerciceYambere").innerHTML += "\n" + "c'est fini pour le premier point!!!";
+// }
+
+// function fonctionYoKwandikaEx2(){
+// document.getElementById("exerciceYakabiri").innerHTML = "L'explication pratique que j'ai pu remarqué est que lorsque on fait l'operation valeur1 && valeur2, l'ordinateur renvoie toujours la deuxième valeur lorsque les valeurs sont vrais. Une seule exception rancontré avec le 0 puisque '0 = false' par défaut. ";
+// }
+// function fonctionYoKwandikaEx3(){
+// var na = prompt("A= ");
+// var nb = prompt("B= ");
+// var nc = prompt("C= ");
+
+
+// var delta = (nb**2)-(4*na*nc);
+
+// if (delta<0){
+// alert('la solution est un nombre complex');
+// }
+// if (delta=0){
+//     alert("la solution est " + Solution1)
+// }
+// var d = delta**(0.5);
+// var Solution1 = (-nb+d)/(2*na);
+// var Solution2 = (-nb-d)/(2*na);
+// alert("la première solution est " + Solution1 +" et la seconde solution est " + Solution2);
+// document.getElementById("exerciceYagatatu").innerHTML = "On va résoudre l'équation "+na+"x²+"+B+"x+"+C+"=0";
+// }
+
+// function fonctionYoKwandikaEx4(){
+// var text = document.getElementById("paragraphe").innerHTML = 'regardez dans votre console';
+// var text = 'Hello hogi';
+
+// var i=0;
+// while(i<50){
+//     console.log(text);
+//     console.log("\n");
+//     i++;
+// }
+
+// }
+    
+    </script>
+</body>
+</html>
