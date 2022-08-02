@@ -22,7 +22,7 @@ console.log(TableA);
 
 //Créons une autre table
 
-let TableB = [ "a", "e", "f", "q", "c", "hey", "d", "d", "f" ];
+let TableB = [ "1", "10", "f", "7", "c", "hey", "d", "d", "f" ];
 
 // splice permet en principe de remplacer plusieurs éléments à la fois
 
@@ -39,6 +39,12 @@ console.log(TableC);
 TableC.sort();
 console.log(TableC);
 
-//cherchons l'index d'un élément
-TableC.indexOf('hey')
-console.log();
+let TableD = [1,3,6,45,57,26,34,98,89,42,16,256,9];
+console.log(TableD);
+
+function pair(nombre){
+    return nombre % 2 == 0;
+}
+
+console.log(TableD.findIndex(pair))
+
