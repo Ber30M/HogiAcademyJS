@@ -46,5 +46,9 @@ function pair(nombre){
     return nombre % 2 == 0;
 }
 
-console.log(TableD.findIndex(pair))
+console.log(TableD.findIndex(pair));
+
+// le Array.find() renvoie le premier élément qui vérifie la condition en paramètre
+
+console.log(TableD.find(pair));
 
