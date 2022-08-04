@@ -15,3 +15,6 @@ console.log(Person.Itazirano);
 
 // Créer une méthode qui me retourne mon nom complet
 console.log(Person.NomComplet());
+
+// un objet est une variable mais c'est une variable composée ou complexe
+// puisqu'il contient les proprietés et les méthodes qui sont des fonctions
