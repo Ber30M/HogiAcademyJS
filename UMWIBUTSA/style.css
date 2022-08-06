@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 12px;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+.mere{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+button{
+    width: 50%;
+    height: 45px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: rgb(254, 2, 57);
+    transition:220ms;       
+}
+textarea{
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px rgb(35, 35, 35) solid;
+    padding: 10px;    
+}
+.umwibutsa{
+    min-height: 45px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(86, 169, 207);
+    color: white;
+    font-weight: bolder;
+}
+#ajout{
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    grid-template-rows:30% 30% 30%;
+    column-gap: 5%;
+}
