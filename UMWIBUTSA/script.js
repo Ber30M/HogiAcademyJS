@@ -6,6 +6,7 @@ function add(){
     NouvelElement.className = 'umwibutsa';
     const conteneur = document.getElementById('ajout');
     conteneur.appendChild(NouvelElement);
+    label = getElementById('labelCompteur').innerHTML 
     i++;
     }
     console.log(i);
